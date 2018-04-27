@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.org.iii.myapplication.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test1"
+        android:onClick="test1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test2"
+        android:onClick="test2"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test3"
+        android:onClick="test3"
+        />
+    <com.like.LikeButton
+        app:icon_type="heart"
+        app:icon_size="25dp"
+        android:id="@+id/star_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:like_drawable="@drawable/heart_on"
+        app:unlike_drawable="@drawable/heart_off"
+        app:circle_start_color="#0f6"
+        app:circle_end_color="@color/colorAccent"
+        app:dots_primary_color="@color/colorAccent"
+        app:dots_secondary_color="@color/colorPrimary"
+        app:anim_scale_factor="15"
+        app:is_enabled="true"/>
+
+</LinearLayout>
